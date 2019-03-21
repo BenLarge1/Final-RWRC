@@ -12,6 +12,11 @@ import FirebaseAuth
 
 class RealLoginViewController: UIViewController {
   
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+  }
+  
   //MARK Properties
   
   @IBOutlet weak var emailTextField: UITextField!
@@ -80,10 +85,7 @@ class RealLoginViewController: UIViewController {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
+
   
   /*
    // MARK: - Navigation
