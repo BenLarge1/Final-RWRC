@@ -29,7 +29,7 @@
 import UIKit
 import FirebaseAuth
 
-class LoginViewController: UIViewController {
+class FakeLoginViewController: UIViewController {
   
   @IBOutlet var actionButton: UIButton!
   @IBOutlet var fieldBackingView: UIView!

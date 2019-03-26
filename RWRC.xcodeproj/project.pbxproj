@@ -11,8 +11,8 @@
 		481A352C20A8E6DC008CD16B /* UIImage+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A352B20A8E6DC008CD16B /* UIImage+Additions.swift */; };
 		481A352E20A8E956008CD16B /* UICollectionView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481A352D20A8E956008CD16B /* UICollectionView+Additions.swift */; };
 		4859774D20A689C700429CB3 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859774C20A689C700429CB3 /* AppSettings.swift */; };
-		4859775020A68AF800429CB3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859774E20A68AF800429CB3 /* LoginViewController.swift */; };
-		4859775120A68AF800429CB3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4859774F20A68AF800429CB3 /* LoginViewController.xib */; };
+		4859775020A68AF800429CB3 /* FakeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859774E20A68AF800429CB3 /* FakeLoginViewController.swift */; };
+		4859775120A68AF800429CB3 /* FakeLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4859774F20A68AF800429CB3 /* FakeLoginViewController.xib */; };
 		4859775320A68B1C00429CB3 /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775220A68B1C00429CB3 /* ChannelsViewController.swift */; };
 		4859775520A68BF500429CB3 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775420A68BF500429CB3 /* AppController.swift */; };
 		4859775720A68C6F00429CB3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4859775620A68C6F00429CB3 /* NavigationController.swift */; };
@@ -28,7 +28,7 @@
 		CE153E9422432205009F0B46 /* IntroToChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE153E9322432205009F0B46 /* IntroToChatViewController.swift */; };
 		CE153E9622441B2D009F0B46 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE153E9522441B2D009F0B46 /* MusicViewController.swift */; };
 		CEA50DE322430C740061A8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA50DE222430C740061A8B8 /* Main.storyboard */; };
-		CEA50DE62243160C0061A8B8 /* RealLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA50DE52243160C0061A8B8 /* RealLoginViewController.swift */; };
+		CEA50DE62243160C0061A8B8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA50DE52243160C0061A8B8 /* LoginViewController.swift */; };
 		CEA50DE8224317E00061A8B8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA50DE7224317E00061A8B8 /* HomeViewController.swift */; };
 		CEA50DEA22431E820061A8B8 /* ReportBullyingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA50DE922431E820061A8B8 /* ReportBullyingFormViewController.swift */; };
 		CEA50DEC22431EA30061A8B8 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA50DEB22431EA30061A8B8 /* SignUpViewController.swift */; };
@@ -41,8 +41,8 @@
 		481A352B20A8E6DC008CD16B /* UIImage+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Additions.swift"; sourceTree = "<group>"; };
 		481A352D20A8E956008CD16B /* UICollectionView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Additions.swift"; sourceTree = "<group>"; };
 		4859774C20A689C700429CB3 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
-		4859774E20A68AF800429CB3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4859774F20A68AF800429CB3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4859774E20A68AF800429CB3 /* FakeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeLoginViewController.swift; sourceTree = "<group>"; };
+		4859774F20A68AF800429CB3 /* FakeLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FakeLoginViewController.xib; sourceTree = "<group>"; };
 		4859775220A68B1C00429CB3 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		4859775420A68BF500429CB3 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		4859775620A68C6F00429CB3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		CE153E9322432205009F0B46 /* IntroToChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroToChatViewController.swift; sourceTree = "<group>"; };
 		CE153E9522441B2D009F0B46 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		CEA50DE222430C740061A8B8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CEA50DE52243160C0061A8B8 /* RealLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RealLoginViewController.swift; path = RWRC/RealLoginViewController.swift; sourceTree = SOURCE_ROOT; };
+		CEA50DE52243160C0061A8B8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = RWRC/LoginViewController.swift; sourceTree = SOURCE_ROOT; };
 		CEA50DE7224317E00061A8B8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = RWRC/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		CEA50DE922431E820061A8B8 /* ReportBullyingFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportBullyingFormViewController.swift; sourceTree = "<group>"; };
 		CEA50DEB22431EA30061A8B8 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -138,8 +138,8 @@
 			children = (
 				4859775220A68B1C00429CB3 /* ChannelsViewController.swift */,
 				4859776520A7AD3800429CB3 /* ChatViewController.swift */,
-				4859774E20A68AF800429CB3 /* LoginViewController.swift */,
-				4859774F20A68AF800429CB3 /* LoginViewController.xib */,
+				4859774E20A68AF800429CB3 /* FakeLoginViewController.swift */,
+				4859774F20A68AF800429CB3 /* FakeLoginViewController.xib */,
 				4859775620A68C6F00429CB3 /* NavigationController.swift */,
 			);
 			path = "View Controllers";
@@ -190,7 +190,7 @@
 			children = (
 				CEA50DEB22431EA30061A8B8 /* SignUpViewController.swift */,
 				CEA50DE922431E820061A8B8 /* ReportBullyingFormViewController.swift */,
-				CEA50DE52243160C0061A8B8 /* RealLoginViewController.swift */,
+				CEA50DE52243160C0061A8B8 /* LoginViewController.swift */,
 				CEA50DE7224317E00061A8B8 /* HomeViewController.swift */,
 				CE153E9322432205009F0B46 /* IntroToChatViewController.swift */,
 				CE153E9522441B2D009F0B46 /* MusicViewController.swift */,
@@ -260,7 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4859775120A68AF800429CB3 /* LoginViewController.xib in Resources */,
+				4859775120A68AF800429CB3 /* FakeLoginViewController.xib in Resources */,
 				4814E1F920CFF62A00E38239 /* GoogleService-Info.plist in Resources */,
 				48AC74D120A66C2C00AA1788 /* LaunchScreen.storyboard in Resources */,
 				48AC74CE20A66C2C00AA1788 /* Assets.xcassets in Resources */,
@@ -336,11 +336,11 @@
 			files = (
 				4859775320A68B1C00429CB3 /* ChannelsViewController.swift in Sources */,
 				4859775720A68C6F00429CB3 /* NavigationController.swift in Sources */,
-				CEA50DE62243160C0061A8B8 /* RealLoginViewController.swift in Sources */,
+				CEA50DE62243160C0061A8B8 /* LoginViewController.swift in Sources */,
 				4859775520A68BF500429CB3 /* AppController.swift in Sources */,
 				CE153E9422432205009F0B46 /* IntroToChatViewController.swift in Sources */,
 				481A352E20A8E956008CD16B /* UICollectionView+Additions.swift in Sources */,
-				4859775020A68AF800429CB3 /* LoginViewController.swift in Sources */,
+				4859775020A68AF800429CB3 /* FakeLoginViewController.swift in Sources */,
 				CEA50DEC22431EA30061A8B8 /* SignUpViewController.swift in Sources */,
 				4859775E20A69CD500429CB3 /* UIView+Additions.swift in Sources */,
 				48AC74C720A66C2A00AA1788 /* AppDelegate.swift in Sources */,

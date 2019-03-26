@@ -29,26 +29,23 @@
 import UIKit
 import Firebase
 
-final class AppController: UIViewController {
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // Do any additional setup after loading the view.
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
+final class AppController {
   
   static let shared = AppController()
   
-  private var window: UIWindow!
-  private var rootViewController: UIViewController?
+  init()
   {
-    didSet
-    {
+    NotificationCenter.default.addObserver(
+      self,
+      selector: #selector(userStateDidChange),
+      name: Notification.Name.AuthStateDidChange,
+      object: nil
+    )
+  }
+  
+  private var window: UIWindow!
+  private var rootViewController: UIViewController? {
+    didSet {
       if let vc = rootViewController
       {
         window.rootViewController = vc
@@ -58,14 +55,17 @@ final class AppController: UIViewController {
   
   // MARK: - Helpers
   
-  func show(in window: UIWindow?) {
-    guard let window = window else {
+  func show(in window: UIWindow?)
+  {
+    guard let window = window else
+    {
       fatalError("Cannot layout app with a nil window.")
     }
     
     FirebaseApp.configure()
     
     self.window = window
+    window.tintColor = .primary
     window.backgroundColor = .white
     
     handleAppState()
@@ -73,14 +73,13 @@ final class AppController: UIViewController {
     window.makeKeyAndVisible()
   }
   
-  private func handleAppState() {
+  private func handleAppState()
+  {
+    AppSettings.displayName = "testUser"
     if Auth.auth().currentUser != nil
     {
-      present(HomeViewController(), animated: true, completion: nil)
-    }
-    else
-    {
-      present(RealLoginViewController(), animated: true, completion: nil)
+      let vc = HomeViewController()
+      rootViewController = NavigationController(vc)
     }
   }
   

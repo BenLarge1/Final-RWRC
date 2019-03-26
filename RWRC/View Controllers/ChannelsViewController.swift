@@ -61,7 +61,7 @@ class ChannelsViewController: UITableViewController {
     self.currentUser = currentUser
     super.init(style: .grouped)
     
-    title = "Channels"
+    title = "Chats"
   }
   
   required init?(coder aDecoder: NSCoder) {
